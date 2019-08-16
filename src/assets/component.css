@@ -1,0 +1,111 @@
+
+.show-error {
+  position: absolute;
+  bottom: -17px;
+  font-size: 12px;
+  color: #e34;
+  opacity: 0;
+  transition: 0.22s;
+  -webkit-transition: 0.22s;
+  -moz-transition: 0.22s;
+  -ms-transition: 0.22s;
+  -o-transition: 0.22s;
+  transform: scale(0, 1);
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  -o-transform: scale(0, 1);
+  transform-origin: left;
+}
+
+.show-error.show{
+  transform: scale(1,1)!important;
+  -webkit-transform: scale(1,1)!important;
+  -moz-transform: scale(1,1)!important;
+  -ms-transform: scale(1,1)!important;
+  -o-transform: scale(1,1)!important;
+  opacity: 1!important;
+}
+
+/* table operation */
+
+.opertation-table .thead th {
+  cursor: pointer;
+  transition: 0.22s;
+  position: relative;
+}
+.opertation-table .thead th::before{
+  content: "\f160";
+  font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    right: 15px;
+}
+
+.opertation-table .thead th.actth:before {
+  display: none;
+}
+
+.opertation-table .thead th.actth:hover{
+  color: #fff!important;
+  cursor: default;
+}
+
+.opertation-table .thead th.actth {
+  text-align: right;
+}
+
+.opertation-table .thead th.desBefore::before{
+  content: "\f161";
+  font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    right: 15px;
+}
+
+.opertation-table .thead th:hover{
+  color: #e34!important;
+}
+
+.delete-conform {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  height: calc(100% - 67px);
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 9898876;
+  transition: 0.22s ease-in-out;
+  transform: scale(0.3);
+  opacity: 0;
+}
+.delete-conform.open{
+  transform: scale(1)!important;
+  opacity: 1!important;
+}
+
+.delete-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.pagination .page-item .page-link:focus{
+  box-shadow: none;
+}
+
+
+/* chat app */
+.member-row:nth-child(even){
+  background: rgba(233, 233, 233, 0.3);
+}
+
+.typing-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
